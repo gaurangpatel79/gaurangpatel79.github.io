@@ -1,0 +1,44 @@
+<html>
+<style>
+img {
+   position: absolute;
+   margin: auto;
+   width: 99%;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+<script>
+ function loadImage(imageUrl) {
+     document.getElementById('imageId').src = imageUrl;
+ }
+</script>
+<body>
+	<div style="position:static;left:10;top:10;z-index:1;font-color:black;padding-bottom:10px;">
+   <a href="javascript:loadImage('Ande.png')">Ande.png</a> |
+   <a href="javascript:loadImage('royalevent.png')">royalevent.png</a> |
+   <a href="javascript:loadImage('cinnamon.png')">cinnamon.png</a> |
+   <a href="javascript:loadImage('foody.png')">foody.png</a> |
+   <a href="javascript:loadImage('norebro.png')">norebro.png</a>
+   </div>
+   
+	<img id="imageId" src="Ande.png">
+</body>
+</html>
